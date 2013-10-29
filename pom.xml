@@ -12,6 +12,19 @@
 
   <build>
     <finalName>ES</finalName>
+    	<plugins>
+    		<plugin>
+    			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-eclipse-plugin</artifactId>
+			<inherited>true</inherited>
+			<configuration>
+				<classpathContainers>
+					<classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
+					<classpathContainer>org.eclipse.jdt.USER_LIBRARY/TOMCAT_6.0.14_LIBRARY</classpathContainer>
+				</classpathContainers>
+			</configuration>
+		</plugin>
+	</plugins>
   </build>
 </project>
 
